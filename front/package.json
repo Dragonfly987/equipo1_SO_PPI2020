@@ -1,7 +1,7 @@
 {
   "name": "co2bon-2",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1284",
+  "description": null,
   "keywords": [],
   "main": "front/src/index.js",
   "dependencies": {
@@ -21,6 +21,7 @@
     "react-scripts": "3.4.3"
   },
   "devDependencies": {
+    "react-scripts": "1.0.0",
     "typescript": "3.8.3"
   },
   "scripts": {
