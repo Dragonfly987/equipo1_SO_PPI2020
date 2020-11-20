@@ -3,9 +3,12 @@ const app = express();
 const usuario= require('./routes/usuario');
 const producto = require('./routes/producto');
 const compra = require('./routes/compra');
-
+const cors = require('cors')
 // Ajustes
-app.set('port',3001);
+app.set('port', process.env.PORT || 3001);
+
+app.use(cors({origin: '*'}));
+//app.use(cors({origin: 'https://kuepj-3000.sse.codesandbox.io'}));
 
 // Middlewares
 app.use(express.json());
