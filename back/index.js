@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
-const estudiantes = require('./routes/estudiantes');
-const modulos = require('./routes/modulos');
-const colegios = require('./routes/colegios');
+const usuario= require('./routes/usuario');
+const producto = require('./routes/producto');
+const compra = require('./routes/compra');
 
 // Ajustes
 app.set('port',3001);
@@ -11,9 +11,9 @@ app.set('port',3001);
 app.use(express.json());
 
 // Routes//
-app.use('/api',estudiantes); //servicios de para estudiantes
-app.use('/api',modulos);  //servicios de para los modulos
-app.use('/api',colegios);  //servicios de para los modulos
+app.use('/api',usuario); //servicios de para estudiantes
+app.use('/api',producto);  //servicios de para los modulos
+app.use('/api',compra);  //servicios de para los modulos
 
 // Ajustes del servidor
 app.listen(app.get('port'), () => {
