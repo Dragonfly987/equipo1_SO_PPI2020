@@ -12,7 +12,9 @@ app.use(cors({origin: '*'}));
 
 // Middlewares
 app.use(express.json());
-
+app.get('/',(req,res)=>{
+  res.send('hi');
+});
 // Routes//
 app.use('/api',usuario); //servicios de para estudiantes
 app.use('/api',producto);  //servicios de para los modulos
