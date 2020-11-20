@@ -4,7 +4,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../contexts/CartContext";
 import { CartIcon } from "./icons";
-import styles from './header.module.scss';
+import styles from "./header.module.scss";
 const Header = () => {
   const itemCount = useContext(CartContext);
 
@@ -49,7 +49,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/Sale" className="nav-link">
+                <Link to="/Sale1" className="nav-link">
                   Vender
                 </Link>
               </li>
@@ -70,12 +70,12 @@ const Header = () => {
               </li>
 
               <header className={styles.header}>
-              <li className="nav-item1">
-                <Link to="/cart">
-                  {" "}
-                  <CartIcon /> Carrito({itemCount})
-                </Link>
-              </li>
+                <li className="nav-item1">
+                  <Link to="/cart">
+                    {" "}
+                    <CartIcon /> Carrito({itemCount})
+                  </Link>
+                </li>
               </header>
             </ul>
             <Form inline>

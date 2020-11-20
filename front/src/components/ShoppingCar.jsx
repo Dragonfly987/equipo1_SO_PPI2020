@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../carrito"
+
 
 export default class main extends Component {
   render() {
