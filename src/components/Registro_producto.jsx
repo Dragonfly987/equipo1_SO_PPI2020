@@ -2,7 +2,7 @@ import { Nav, Modal, Button, Form, Col } from "react-bootstrap";
 import React, { Component } from "react";
 import axios from "axios";
 
-const url = "https://NodeMySQL-2.santiagohenao97.repl.co/api/";
+const url = "https://backco2bon.herokuapp.com";
 
 export default class main extends Component {
   state = {
