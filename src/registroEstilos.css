@@ -178,4 +178,22 @@ justify-content: center;
       width:75%;
    }
 }
+.btnx {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.btnx {
+  margin-top: 10vw;
+  margin-left: 45.5%;
+  margin-bottom: 3%;
+}
+@media (max-width: 470px) {
+  .btnx {
+    margin-top: 20vw;
+    margin-left: 36%;
+    margin-bottom: 5%;
+  }
+}
+
 
